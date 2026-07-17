@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Peach &amp; Claw — planche de validation</title>
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--night:#0c090a;--ink:#171013;--peach:#f6c2ae;--coral:#eb716a;--paper:#f6ddd2;--muted:#b9a5a8;--line:rgba(246,194,174,.22)}
+    *{box-sizing:border-box} body{margin:0;background:var(--night);color:#fff7f2;font:15px/1.6 Sora,sans-serif}
+    .shell{width:min(1120px,calc(100% - 36px));margin:auto}.eyebrow{font:700 12px Archivo Narrow,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--coral)}
+    header{padding:64px 0 42px;border-bottom:1px solid var(--line)} h1{font:500 clamp(48px,8vw,96px)/.92 Fraunces,serif;margin:.2em 0}.intro{max-width:690px;color:var(--muted)}
+    main{padding:42px 0 90px;display:grid;gap:14px}.panel{border:1px solid var(--line);background:var(--ink);padding:22px}.panel h2{font:500 24px Fraunces,serif;margin:0 0 18px}
+    .stage{min-height:330px;background:var(--night);display:grid;place-items:center;padding:34px}.stage.paper{background:var(--paper)}
+    .emblem{width:min(230px,55%)}.mono{width:min(270px,62%)}
+    .wordmark{display:flex;align-items:center;justify-content:center;gap:clamp(22px,4vw,52px);width:100%}.wordmark .mono{width:clamp(82px,12vw,145px);flex:0 0 auto}
+    .name{color:var(--peach);font:650 clamp(48px,7vw,92px)/.92 Fraunces,serif;letter-spacing:-.055em;white-space:nowrap}.name .amp{color:var(--coral);font-style:italic;display:inline-block;transform:skewX(-7deg);margin:0 .08em}.name .claw{font:700 .88em/.92 Archivo Narrow,sans-serif;letter-spacing:-.035em}
+    .paper .name{color:var(--night)}.paper .name .amp{color:#a8434e}
+    .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sizes{display:flex;align-items:end;justify-content:center;gap:34px}.sizes img:nth-child(1){width:96px}.sizes img:nth-child(2){width:48px}.sizes img:nth-child(3){width:24px}
+    .decision{padding:28px;border-left:4px solid var(--coral);background:#211519}.decision strong{font:650 26px Fraunces,serif}.decision p{color:var(--muted);margin:.5em 0 0}
+    a{color:var(--peach)}
+    @media(max-width:720px){header{padding-top:42px}.pair{grid-template-columns:1fr}.stage{min-height:250px;padding:24px}.wordmark{flex-direction:column}.name{font-size:clamp(42px,13vw,64px)}.wordmark .mono{width:100px}}
+  </style>
+</head>
+<body>
+  <header><div class="shell"><span class="eyebrow">Planche de décision · GO / NO-GO</span><h1>Seulement ce que<br />nous voulons garder.</h1><p class="intro">Aucune ancienne piste, aucun brouillon concurrent. Cette page présente la famille candidate : emblème historique, fusion enveloppante et véritable traitement typographique B.</p></div></header>
+  <main class="shell">
+    <section class="panel"><h2>Signature horizontale candidate</h2><div class="stage"><div class="wordmark"><img class="mono" src="assets/logo/monogram-final-dark.svg" alt="Monogramme P C fusionné"/><div class="name"><span>Peach</span> <span class="amp">&amp;</span> <span class="claw">Claw</span></div></div></div></section>
+    <section class="panel"><h2>Signature sur papier</h2><div class="stage paper"><div class="wordmark"><img class="mono" src="assets/logo/monogram-final-light.svg" alt="Monogramme P C fusionné sur fond clair"/><div class="name"><span>Peach</span> <span class="amp">&amp;</span> <span class="claw">Claw</span></div></div></div></section>
+    <div class="pair">
+      <section class="panel"><h2>Emblème maître</h2><div class="stage"><img class="emblem" src="assets/logo/emblem-dark.svg" alt="Emblème pêche et griffe"/></div></section>
+      <section class="panel"><h2>Monogramme secondaire</h2><div class="stage"><img class="mono" src="assets/logo/monogram-final-dark.svg" alt="Monogramme P C fusionné"/></div></section>
+    </div>
+    <section class="panel"><h2>Épreuve des petites tailles</h2><div class="stage"><div class="sizes"><img src="assets/logo/monogram-final-dark.svg" alt="96 pixels"/><img src="assets/logo/monogram-final-dark.svg" alt="48 pixels"/><img src="assets/logo/monogram-final-dark.svg" alt="24 pixels"/></div></div></section>
+    <section class="decision"><strong>Décision demandée</strong><p>GO : nous figeons cette famille puis vectorisons définitivement le logotype. NO-GO : indique uniquement l’élément qui bloque — emblème, monogramme ou texte.</p></section>
+    <a href="identity.html">Voir les explorations archivées →</a>
+  </main>
+</body>
+</html>
