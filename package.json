@@ -1,0 +1,13 @@
+{
+  "name": "@peachandclaw/design-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Peach & Claw identity and design-system assets",
+  "scripts": {
+    "build:logo": "node scripts/vectorize-logo.js"
+  },
+  "devDependencies": {
+    "potrace": "2.1.8"
+  }
+}
+
