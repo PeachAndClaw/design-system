@@ -2,11 +2,11 @@
 
 Explorations et fondations du design system partagé de Sylvain & Gianna.
 
-La page publiée présente trois directions créatives comparables :
+La page publiée présente la direction unifiée retenue :
 
-- Velours éditorial
-- Couture tranchante
-- Atelier nocturne
+- 60 % Atelier nocturne
+- 30 % Velours éditorial
+- 10 % Couture tranchante
 
-Ces directions sont des supports d’arbitrage, pas encore la charte finale.
-
+Les trois explorations initiales restent disponibles dans `explorations-v1.html`.
+La V2 est une direction validée, pas encore la charte finale complète.
