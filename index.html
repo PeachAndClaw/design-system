@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peach & Claw — Directions créatives v1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Barlow+Condensed:wght@500;700&family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Instrument+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night:#090708; --velvet:#140b10; --ink:#211017;
+      --peach:#f3b49d; --peach-soft:#f7d2c4; --coral:#e86462;
+      --bordeaux:#711d35; --gold:#c7a569; --ivory:#f5eee8;
+      --muted:#aa999f; --line:rgba(243,180,157,.24);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#050405;color:var(--ivory);font-family:"Instrument Sans",sans-serif}
+    .index{position:fixed;z-index:20;inset:18px 20px auto auto;display:flex;gap:6px;padding:6px;background:rgba(9,7,8,.82);border:1px solid var(--line);backdrop-filter:blur(12px)}
+    .index a{color:var(--peach-soft);text-decoration:none;font:600 11px/1 "Instrument Sans";letter-spacing:.08em;padding:9px 11px}
+    .index a:hover,.index a:focus-visible{background:var(--peach);color:var(--night);outline:none}
+    .board{min-height:100vh;position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);padding:clamp(28px,5vw,78px);border-bottom:1px solid var(--line)}
+    .board::after{content:"";position:absolute;top:-20%;right:31%;width:2px;height:145%;background:linear-gradient(transparent,var(--coral),transparent);transform:rotate(18deg);opacity:.7;pointer-events:none}
+    .hero{display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100vh - clamp(56px,10vw,156px));padding-right:clamp(24px,5vw,84px)}
+    .eyebrow{display:flex;align-items:center;gap:14px;color:var(--peach);text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:600}
+    .eyebrow::before{content:"";width:42px;height:1px;background:currentColor}
+    .mark{position:absolute;width:clamp(90px,10vw,160px);height:auto;right:clamp(30px,5vw,78px);top:clamp(30px,5vw,70px);filter:drop-shadow(0 18px 45px rgba(232,100,98,.12))}
+    h1{margin:.25em 0 .15em;max-width:9ch;font-size:clamp(68px,10vw,176px);line-height:.76;font-weight:500;letter-spacing:-.06em}
+    .thesis{max-width:640px;margin:0;color:var(--peach-soft);font-size:clamp(17px,1.6vw,25px);line-height:1.45}
+    .quote{align-self:flex-end;max-width:440px;margin:36px 4vw 0 0;padding:18px 0 18px 28px;border-left:1px solid var(--coral);font-style:italic;color:var(--muted)}
+    .specimen{align-self:end;display:grid;gap:28px;padding:clamp(22px,3vw,42px);background:rgba(20,11,16,.78);border:1px solid var(--line);clip-path:polygon(0 0,100% 0,100% 90%,91% 100%,0 100%)}
+    .specimen h2{margin:0;color:var(--peach);font-size:12px;text-transform:uppercase;letter-spacing:.16em}
+    .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+    .swatch{height:66px;position:relative;background:var(--c)}
+    .swatch span{position:absolute;left:7px;bottom:6px;color:var(--t,#fff);font-size:9px;text-transform:uppercase}
+    .type-sample{display:grid;gap:13px}
+    .type-sample strong{font-size:36px;font-weight:500;line-height:1}
+    .type-sample p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+    .ui{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .button,.field{min-height:44px;display:flex;align-items:center;padding:0 16px;font-size:12px}
+    .button{justify-content:center;background:var(--peach);color:var(--night);font-weight:700}
+    .field{border:1px solid var(--line);color:var(--muted)}
+    .rule{height:1px;background:linear-gradient(90deg,var(--coral) 0 22%,var(--line) 22%)}
+    .meta{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+
+    .editorial{background:radial-gradient(circle at 15% 80%,rgba(113,29,53,.20),transparent 32%),var(--night)}
+    .editorial h1,.editorial .type-sample strong{font-family:"Cormorant Garamond",serif}
+    .editorial h1 em{font-weight:500;color:var(--peach);font-style:italic}
+    .editorial .quote{font-family:"Cormorant Garamond",serif;font-size:23px}
+
+    .couture{background:linear-gradient(115deg,#050405 0 57%,#14070c 57%)}
+    .couture::before{content:"CLAW";position:absolute;left:42%;top:46%;transform:translate(-50%,-50%) rotate(-90deg);font:700 clamp(90px,15vw,250px)/1 "Barlow Condensed";letter-spacing:.02em;color:rgba(113,29,53,.12)}
+    .couture h1,.couture .type-sample strong{font-family:"Bodoni Moda",serif}
+    .couture h1{max-width:7ch;text-transform:uppercase;font-size:clamp(58px,8.6vw,144px);line-height:.82}
+    .couture h1 em{font-family:"Barlow Condensed",sans-serif;color:var(--coral);font-style:normal;letter-spacing:-.03em}
+    .couture .eyebrow,.couture .meta,.couture .button{font-family:"Barlow Condensed",sans-serif;letter-spacing:.16em}
+    .couture .specimen{border-color:rgba(199,165,105,.28);clip-path:polygon(0 0,94% 0,100% 10%,100% 100%,0 100%)}
+
+    .workshop{background:radial-gradient(ellipse at 20% 30%,rgba(243,180,157,.08),transparent 38%),repeating-linear-gradient(0deg,rgba(255,255,255,.014) 0 1px,transparent 1px 5px),#0c090a}
+    .workshop h1,.workshop .type-sample strong{font-family:"Fraunces",serif}
+    .workshop h1{max-width:8.5ch;line-height:.84}
+    .workshop h1 em{font-style:normal;color:var(--peach);font-variation-settings:"SOFT" 100,"WONK" 1}
+    .workshop .eyebrow,.workshop .meta{font-family:"Archivo Narrow",sans-serif}
+    .workshop .specimen{background:#171013;box-shadow:14px 14px 0 rgba(113,29,53,.22);transform:rotate(-.35deg)}
+    .workshop .quote{font-family:"Fraunces",serif;color:var(--peach-soft)}
+
+    @media(max-width:840px){
+      .index{position:fixed;left:12px;right:12px;top:auto;bottom:12px;justify-content:center}
+      .board{grid-template-columns:1fr;gap:44px;padding:32px 24px 90px}
+      .hero{min-height:70vh;padding-right:0}.mark{width:84px;right:24px;top:26px}
+      .specimen{margin-bottom:20px}.couture::before{left:62%;opacity:.6}
+    }
+    @media(prefers-reduced-motion:no-preference){
+      .mark{animation:arrive .9s cubic-bezier(.2,.8,.2,1) both}
+      @keyframes arrive{from{opacity:0;transform:translateY(-16px) rotate(-2deg)}to{opacity:1;transform:none}}
+    }
+  </style>
+</head>
+<body>
+  <nav class="index" aria-label="Directions">
+    <a href="#editorial">Éditoriale</a><a href="#couture">Couture</a><a href="#atelier">Atelier</a>
+  </nav>
+
+  <section class="board editorial" id="editorial">
+    <img class="mark" src="peachandclaw-emblem-final.png" alt="Emblème Peach & Claw">
+    <div class="hero">
+      <div class="eyebrow">Direction éditoriale</div>
+      <div><h1>Velours <em>éditorial</em></h1><p class="thesis">La douceur prend la parole. La précision attend son heure — puis tranche.</p></div>
+      <p class="quote">« Les mots sourient. La composition, elle, ne plaisante pas. »</p>
+    </div>
+    <aside class="specimen">
+      <h2>Hypothèse A · Malice dominante</h2>
+      <div class="palette">
+        <div class="swatch" style="--c:#090708"><span>Nuit</span></div><div class="swatch" style="--c:#f3b49d;--t:#090708"><span>Pêche</span></div><div class="swatch" style="--c:#e86462"><span>Corail</span></div><div class="swatch" style="--c:#711d35"><span>Griffe</span></div><div class="swatch" style="--c:#c7a569;--t:#090708"><span>Or</span></div>
+      </div>
+      <div class="type-sample"><strong>Cormorant Garamond</strong><p>Instrument Sans garde l’interface claire et humaine. La serif porte les phrases-signatures, avec une sensualité légèrement théâtrale.</p></div>
+      <div class="rule"></div><div class="ui"><div class="button">Ouvrir l’atelier</div><div class="field">Une idée à trancher…</div></div>
+      <div class="meta"><span>Accueil chaleureux</span><span>Griffe retenue</span></div>
+    </aside>
+  </section>
+
+  <section class="board couture" id="couture">
+    <img class="mark" src="peachandclaw-emblem-final.png" alt="Emblème Peach & Claw">
+    <div class="hero">
+      <div class="eyebrow">Direction couture</div>
+      <div><h1>Douceur <em>coupée net</em></h1><p class="thesis">L’élégance sombre mène. La pêche n’adoucit pas la lame : elle la rend mémorable.</p></div>
+      <p class="quote">Une maison numérique qui sait exactement quand se faire remarquer.</p>
+    </div>
+    <aside class="specimen">
+      <h2>Hypothèse B · Insolence amplifiée</h2>
+      <div class="palette">
+        <div class="swatch" style="--c:#050405"><span>Noir</span></div><div class="swatch" style="--c:#f0a98e;--t:#090708"><span>Chair</span></div><div class="swatch" style="--c:#da5459"><span>Éclat</span></div><div class="swatch" style="--c:#5a1027"><span>Bordeaux</span></div><div class="swatch" style="--c:#b9965b;--t:#090708"><span>Or mat</span></div>
+      </div>
+      <div class="type-sample"><strong>Bodoni Moda × Barlow</strong><p>Manrope stabilise la lecture. Bodoni donne la cérémonie ; Barlow Condensed signe les labels, chiffres et décisions sans détour.</p></div>
+      <div class="rule"></div><div class="ui"><div class="button">Décider maintenant</div><div class="field">Verdict en attente</div></div>
+      <div class="meta"><span>Impact maximal</span><span>Usage parcimonieux</span></div>
+    </aside>
+  </section>
+
+  <section class="board workshop" id="atelier">
+    <img class="mark" src="peachandclaw-emblem-final.png" alt="Emblème Peach & Claw">
+    <div class="hero">
+      <div class="eyebrow">Direction atelier nocturne</div>
+      <div><h1>On fabrique. <em>On affine.</em></h1><p class="thesis">Le système montre ses outils, ses essais et ses décisions — avec chaleur, sans perdre la tenue.</p></div>
+      <p class="quote">« L’atelier reste ouvert. Le jugement, lui, reste aiguisé. »</p>
+    </div>
+    <aside class="specimen">
+      <h2>Hypothèse C · Humanité tactile</h2>
+      <div class="palette">
+        <div class="swatch" style="--c:#0c090a"><span>Encre</span></div><div class="swatch" style="--c:#f6c2ae;--t:#090708"><span>Papier</span></div><div class="swatch" style="--c:#eb716a"><span>Impulsion</span></div><div class="swatch" style="--c:#78263e"><span>Trace</span></div><div class="swatch" style="--c:#cfad71;--t:#090708"><span>Agrafe</span></div>
+      </div>
+      <div class="type-sample"><strong>Fraunces × Archivo Narrow</strong><p>Sora structure l’interface. Fraunces ajoute une malice organique contrôlée ; Archivo Narrow donne aux annotations une voix nette, jamais manuscrite.</p></div>
+      <div class="rule"></div><div class="ui"><div class="button">Mettre au travail</div><div class="field">Prochaine expérience</div></div>
+      <div class="meta"><span>Complicité maximale</span><span>Couture en profondeur</span></div>
+    </aside>
+  </section>
+</body>
+</html>
