@@ -13,9 +13,9 @@ La V2 est une direction validée, pas encore la charte finale complète.
 
 ## Identité
 
-`identity.html` présente la première famille de marque : emblèmes sombre/clair,
-logotypes horizontaux, version monochrome, favicon et monogramme secondaire.
-Les règles provisoires sont documentées dans `BRAND-GUIDELINES.md`.
+`approval.html` présente uniquement la famille approuvée : emblème historique,
+monogramme Fusion enveloppante et logotype B vectorisé. `identity.html` conserve
+les explorations antérieures. Les règles sont documentées dans `BRAND-GUIDELINES.md`.
 
 La vectorisation est reproductible avec :
 
