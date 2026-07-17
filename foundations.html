@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Peach &amp; Claw — Fondations</title>
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tokens.css" />
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:var(--pc-bg);color:var(--pc-text);font:var(--pc-step-0)/1.65 var(--pc-font-body)}
+    .shell{width:min(var(--pc-max-content),calc(100% - 36px));margin:auto}.hero{padding:var(--pc-space-16) 0;border-bottom:1px solid var(--pc-border)}
+    .hero img{width:min(520px,100%);height:auto}.kicker{font:700 var(--pc-step--1) var(--pc-font-utility);letter-spacing:.16em;text-transform:uppercase;color:var(--pc-accent-strong)}
+    h1,h2,h3{font-family:var(--pc-font-display);font-weight:500}h1{font-size:var(--pc-step-4);line-height:.92;margin:.25em 0}h2{font-size:var(--pc-step-3);line-height:1;margin:.2em 0 .6em}h3{font-size:var(--pc-step-1)}
+    .muted{color:var(--pc-text-muted)}main{padding:var(--pc-space-12) 0 var(--pc-space-24);display:grid;gap:var(--pc-space-16)}section{border-top:1px solid var(--pc-border);padding-top:var(--pc-space-8)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--pc-grid-gap)}.span-4{grid-column:span 4}.span-6{grid-column:span 6}.span-12{grid-column:1/-1}
+    .swatch{min-height:170px;padding:var(--pc-space-4);display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--pc-border)}.swatch b{font-family:var(--pc-font-utility);text-transform:uppercase;letter-spacing:.08em}.swatch code{font-size:var(--pc-step--1)}
+    .type-specimen{background:var(--pc-surface);padding:var(--pc-space-8);border:1px solid var(--pc-border)}.display{font:650 var(--pc-step-4)/.9 var(--pc-font-display);letter-spacing:-.045em}.utility{font:700 var(--pc-step-1) var(--pc-font-utility);letter-spacing:.12em;text-transform:uppercase}
+    .scale{display:flex;align-items:end;gap:var(--pc-space-2);height:150px;border-bottom:1px solid var(--pc-border)}.scale i{display:block;width:42px;background:var(--pc-accent);height:calc(var(--n)*4px)}
+    .shape{min-height:160px;background:var(--pc-surface);padding:var(--pc-space-6);border:1px solid var(--pc-border);position:relative}.shape.soft{border-radius:var(--pc-radius-soft)}.shape.embrace{border-radius:var(--pc-radius-embrace)}.shape.cut{clip-path:polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%)}
+    .a11y{display:flex;align-items:center;gap:var(--pc-space-4);padding:var(--pc-space-4);background:var(--pc-surface);border-left:4px solid var(--pc-success)}.focus-demo{padding:.7em 1.1em;color:var(--pc-bg);background:var(--pc-accent);border:0;border-radius:var(--pc-radius-cut);font-weight:600}.focus-demo:focus-visible{outline:3px solid var(--pc-focus);outline-offset:4px}
+    .light-demo{background:var(--pc-papier-200);color:var(--pc-velours-950);padding:var(--pc-space-8);border-radius:var(--pc-radius-embrace)}a{color:var(--pc-accent)}
+    @media(max-width:760px){.span-4,.span-6{grid-column:1/-1}.hero{padding-top:var(--pc-space-12)}.display{font-size:var(--pc-step-3)}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><span class="kicker">Fondations · version 1</span><h1>La matière avant<br />la mécanique.</h1><p class="muted">Le socle de production Peach &amp; Claw : sombre par nature, clair par nécessité, lisible sans devenir sage.</p><img src="assets/logo/wordmark-approved-dark.svg" alt="Peach and Claw" /></div></header>
+  <main class="shell">
+    <section><span class="kicker">Couleur</span><h2>Velours, pêche, griffe.</h2><div class="grid">
+      <div class="swatch span-4" style="background:#0c090a"><b>Velours 950</b><code>#0C090A · fond canonique</code></div><div class="swatch span-4" style="background:#f6c2ae;color:#0c090a"><b>Pêche 300</b><code>#F6C2AE · accent principal</code></div><div class="swatch span-4" style="background:#eb716a;color:#0c090a"><b>Corail 500</b><code>#EB716A · impulsion</code></div>
+      <div class="swatch span-4" style="background:#7a2737"><b>Bordeaux 700</b><code>#7A2737 · griffe claire</code></div><div class="swatch span-4" style="background:#d8bc82;color:#0c090a"><b>Or 400</b><code>#D8BC82 · cérémonie/focus</code></div><div class="swatch span-4" style="background:#f6ddd2;color:#0c090a"><b>Papier 200</b><code>#F6DDD2 · doublure claire</code></div>
+    </div></section>
+    <section><span class="kicker">Typographie</span><h2>Trois voix, trois fonctions.</h2><div class="grid"><div class="type-specimen span-12"><div class="display">La pêche attire.</div><p class="muted">Fraunces · émotion, titres et phrases-signatures.</p></div><div class="type-specimen span-6"><p>Sora porte les interfaces, les textes et les décisions. Sa géométrie reste humaine et calme.</p><small class="muted">Sora · lecture et interface</small></div><div class="type-specimen span-6"><div class="utility">La griffe signe</div><p class="muted">Archivo Narrow · labels, chiffres et ruptures.</p></div></div></section>
+    <section><span class="kicker">Rythme &amp; grille</span><h2>4 pixels, puis respirer.</h2><div class="grid"><div class="span-6"><div class="scale"><i style="--n:2"></i><i style="--n:4"></i><i style="--n:8"></i><i style="--n:12"></i><i style="--n:16"></i><i style="--n:24"></i></div><p class="muted">8 · 16 · 32 · 48 · 64 · 96 px</p></div><div class="span-6 type-specimen"><b>Grille 12 colonnes</b><p class="muted">74 rem maximum, gouttières fluides de 16 à 28 px. Les compositions éditoriales peuvent rompre la symétrie, jamais l’alignement.</p></div></div></section>
+    <section><span class="kicker">Forme</span><h2>Accueillir, puis entailler.</h2><div class="grid"><div class="shape span-4"><b>Coupe · 2 px</b><p class="muted">Contrôles et décisions.</p></div><div class="shape soft span-4"><b>Souple · 12 px</b><p class="muted">Cartes et surfaces de travail.</p></div><div class="shape embrace cut span-4"><b>Étreinte · 28 px + entaille</b><p class="muted">Moments de marque uniquement.</p></div></div></section>
+    <section><span class="kicker">Accessibilité</span><h2>L’élégance reste lisible.</h2><div class="grid"><div class="a11y span-6"><b>AA minimum</b><span class="muted">Texte courant 4,5:1 ; grands textes 3:1.</span></div><div class="type-specimen span-6"><button class="focus-demo">Tester le focus</button><p class="muted">Focus visible 3 px. Aucun état communiqué par la couleur seule.</p></div><div class="light-demo span-12"><h3>La doublure claire</h3><p>Réservée aux documents longs, impressions, emails et interfaces où la nuit fatiguerait.</p></div></div></section>
+    <a href="approval.html">← Revenir à l’identité approuvée</a>
+  </main>
+</body>
+</html>
