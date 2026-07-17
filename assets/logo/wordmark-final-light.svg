@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" role="img" aria-labelledby="title">
+  <title id="title">Logotype Peach &amp; Claw — clair</title>
+  <rect width="1600" height="360" fill="#F6DDD2"/>
+  <g transform="translate(50 50) scale(.5)">
+    <path d="M350 113c-38-31-84-43-132-34C126 96 76 166 76 256s50 160 142 177c48 9 94-3 132-34" fill="none" stroke="#0C090A" stroke-width="48" stroke-linecap="round"/>
+    <path d="M193 404V108h76c73 0 117 39 117 103 0 65-44 105-117 105h-76" fill="none" stroke="#0C090A" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M318 151l-49 122" fill="none" stroke="#A8434E" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <text x="350" y="226" fill="#0C090A" font-family="Fraunces, Georgia, serif" font-size="134" font-weight="650" letter-spacing="-6">Peach</text>
+  <text x="726" y="226" fill="#A8434E" font-family="Fraunces, Georgia, serif" font-size="126" font-weight="650" font-style="italic">&amp;</text>
+  <text x="840" y="226" fill="#0C090A" font-family="Archivo Narrow, Arial Narrow, sans-serif" font-size="126" font-weight="700" letter-spacing="-3">CLAW</text>
+</svg>
